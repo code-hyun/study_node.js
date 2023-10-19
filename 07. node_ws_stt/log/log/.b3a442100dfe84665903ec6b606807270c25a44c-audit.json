@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "/Users/ailak/Documents/dev_study/07. node_ws_stt/log/log/.b3a442100dfe84665903ec6b606807270c25a44c-audit.json",
+    "files": [
+        {
+            "date": 1697723379483,
+            "name": "/Users/ailak/Documents/dev_study/07. node_ws_stt/log/log/NODE_WS_STT_exception_2023-10-19.log",
+            "hash": "712e53020da6a64dac9399236b41e98f65ebe562bd47e8123c06b3908d154ac4"
+        }
+    ],
+    "hashType": "sha256"
+}

@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "../log/.4f27328ad71296b49e056da13a248c22136448c4-audit.json",
+    "files": [
+        {
+            "date": 1697720083307,
+            "name": "../log/air_quailty_exception_2023-10-19.log",
+            "hash": "0a50581817efb42880649bd9c2445c35dbcb79720c0a0aa58bf61710ee2f6990"
+        }
+    ],
+    "hashType": "sha256"
+}

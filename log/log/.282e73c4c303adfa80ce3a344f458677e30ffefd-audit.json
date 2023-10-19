@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "../log/log/.282e73c4c303adfa80ce3a344f458677e30ffefd-audit.json",
+    "files": [
+        {
+            "date": 1697720083306,
+            "name": "../log/log/NODE_WS_STT_2023-10-19_error.log",
+            "hash": "b09521d67855827dfe084d251bd92e33d66a4e47915b5946acd64797bb414b92"
+        }
+    ],
+    "hashType": "sha256"
+}
