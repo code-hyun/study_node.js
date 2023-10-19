@@ -1,8 +1,8 @@
 const fs = require('fs');
 const request = require('request');
 const logger = require('../logger/logger')
-const clientId = 'gy3zsjsfoz';
-const clientSecret = 'VkHcHzS5baIcRhdlo11HlsoU0dEkbbU0rrTRCCxR';
+const clientId = 'CLOVA clientID';
+const clientSecret = 'CLOVA clienSecret';
 
 // language => 언어 코드 ( Kor, Jpn, Eng, Chn )
 async function stt(language, filePath) {
