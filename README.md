@@ -10,6 +10,6 @@
 
 ## 05.
 
-## 06.
+## 06. node_scheduler_Logger_postgreSQL
 
 ## 07. node_Websocket_STT
