@@ -2,7 +2,7 @@ const Websocket = require('ws');
 const fs = require('fs');
 const http = require('http');
 const express = require('express');
-const { tid_check } = require('./module/tid_check');
+const { tid_check } = require('./module/check_tid');
 const { create_tid } = require('./module/create_tid')
 const { stt } = require('./module/clova');
 const logger = require('./logger/logger');
@@ -12,18 +12,19 @@ const server = http.createServer(app);
 
 const wss = new Websocket.Server({server});
 const savePath = './server_getSound';
+
 let tid;
 app.get('/check_tid', (req, res) => {
     let header = req.headers;
     let clientTid = header.tid;
     logger.info(tid_check(clientTid));
+    
     if(tid_check(clientTid)){
         tid = clientTid
     }else{
         tid = create_tid();
     }
 
-    // tid =  tid_check(clientTid) ? clientTid : create_tid();
     logger.info(tid)
     res.send(JSON.stringify(tid));
 
@@ -80,14 +81,16 @@ wss.on('connection', async (ws, req) => {
                     try {
                         logger.info(`[WS][Tid] ${data.tid} | 파일 전송 완료`)
                         
-                        await fs.writeFileSync(`${savePath}/get_sound_from_Client.wav`,Buffer.concat(sound_buffer));
+                        await fs.writeFileSync(
+                            `${savePath}/get_sound_from_Client.wav`
+                                    ,Buffer.concat(sound_buffer));
                         
                         if(fs.existsSync(`${savePath}/get_sound_from_Client.wav`)){
                             logger.info(`[WS][Tid] ${data.tid} | 음원 파일 생성 완료`)
                             let stt_text = await stt('Kor',`${savePath}/get_sound_from_Client.wav`);
                             if(stt_text){
                                 logger.info(`[HTTP][STT] 변환 완료 | ${stt_text}`)
-                                const stt_data = {stt : JSON.parse(stt_text), certified : 1, tid : data.tid};
+                                const stt_data = {stt : JSON.parse(stt_text), certified : 1, tid : data.tid, fileSend : data.fileSend};
                                 logger.info(`[WS][STT] Send STT Data | [Tid] ${stt_data.tid} | [Certified] ${stt_data.certified} | [STT] ${stt_data.stt.text} `)
                                 ws.send(JSON.stringify(stt_data));
                             }
