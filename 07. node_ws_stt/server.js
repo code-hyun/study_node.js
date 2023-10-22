@@ -12,7 +12,23 @@ const server = http.createServer(app);
 
 const wss = new Websocket.Server({server});
 const savePath = './server_getSound';
-let flag;
+let tid;
+app.get('/check_tid', (req, res) => {
+    let header = req.headers;
+    let clientTid = header.tid;
+    logger.info(tid_check(clientTid));
+    if(tid_check(clientTid)){
+        tid = clientTid
+    }else{
+        tid = create_tid();
+    }
+
+    // tid =  tid_check(clientTid) ? clientTid : create_tid();
+    logger.info(tid)
+    res.send(JSON.stringify(tid));
+
+})
+
 
 wss.on('connection', async (ws, req) => {
     logger.info('[WS] Client connect');
@@ -94,4 +110,6 @@ wss.on('connection', async (ws, req) => {
 
 server.listen(3001, () => {
     logger.info('3001 포트 서버 작동')
+}).on('error', (err) => {
+    logger.error('서버 시작 중 에러 발생:', err);
 })

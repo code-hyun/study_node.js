@@ -21,7 +21,7 @@ async function tid_check(data){
         return false;
     }else{
         if((new Date() - tidInfo.rows[0].create_at)>= TIME){
-            logger.info(`${(new Date() - tidInfo.rows[0].create_at)/1000/60 - 5} 분 지나서 유효시간 만료`);
+            logger.info(`${((new Date() - tidInfo.rows[0].create_at)/1000/60 - 5).toFixed(1)} 분 지나서 유효시간 만료`);
             return false;
         }
         return true;
