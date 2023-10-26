@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "/Users/ailak/Documents/dev_study/08.node_stt_ws/server/log/.ddb5916056bffe9522dc7adcbaa1f59c1d93708f-audit.json",
+    "files": [
+        {
+            "date": 1698322504512,
+            "name": "/Users/ailak/Documents/dev_study/08.node_stt_ws/server/log/NODE_WS_STT_2023-10-26.log",
+            "hash": "8a415d222e20729a87f99c066f22245b1b9c42deb0ccafa25747eda1a3a639b9"
+        },
+        {
+            "date": 1698332426064,
+            "name": "/Users/ailak/Documents/dev_study/08.node_stt_ws/server/log/NODE_WS_STT_2023-10-27.log",
+            "hash": "cf98c5e235ef62bce05d3db52a9f3fa4d8350c1c4ae592a869df260e5cd87304"
+        }
+    ],
+    "hashType": "sha256"
+}
