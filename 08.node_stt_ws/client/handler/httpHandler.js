@@ -1,26 +1,30 @@
 const http = require('http');
 const logger = require('../config/logger');
 
-function httpHandler(options, callback) {
-    const req = http.request("http://localhost:3000/check", options, (res) => {
-        let responseData = '';
-        res.on('data', (data) => {
-            responseData += data;
+function httpHandler(options) {
+    return new Promise((resolve, reject) => {
+        const req = http.request("http://localhost:3000/check", options, (res) => {
+            let responseData = '';
+            res.on('data', (data) => {
+                responseData += data;
+            });
+
+            res.on('end', () => {
+                const data = JSON.parse(responseData);
+                logger.info(`[HTTP][Tid]${data.tid} | `);
+                resolve(data.tid);
+            });
         });
 
-        res.on('end', () => {
-            const data = JSON.parse(responseData);
-            logger.info(data.tid);
-            callback(null, data.tid); // Success case
+        req.on('error', (error) => {
+            logger.error(`에러 메시지 : ${error.message}`);
+            reject(error);
         });
-    });
 
-    req.on('error', (error) => {
-        logger.error(`Error with request: ${error.message}`);
-        callback(error); // Error case
+        req.end();
     });
-
-    req.end();
 }
 
-module.exports = httpHandler;
+module.exports = {
+    httpHandler: httpHandler
+};

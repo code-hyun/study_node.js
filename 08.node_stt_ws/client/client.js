@@ -1,5 +1,5 @@
-const httpHandler = require('./handler/httpHandler');
-const {wsHandler} = require('./handler/wsHandler');
+const { httpHandler } = require('./handler/httpHandler');
+const { wsHandler } = require('./handler/wsHandler');
 const fileCheck = require('./service/service');
 const logger = require('./config/logger');
 
@@ -11,23 +11,20 @@ const options = {
     }
 };
 
-let isFile = fileCheck(options.headers.tid);
+async function main() {
+    let isFile = fileCheck(options.headers.tid);
 
-if (!isFile) {
-    httpHandler(options, (err, tid) => {
-        if (err) {
-            logger.error("HTTP Error:", err);
-            return;
+    if (!isFile) {
+        try {
+            const tid = await httpHandler(options);
+            await wsHandler(tid);
+            logger.info("웹소켓 정상 작업완료");
+        } catch (err) {
+            logger.error(err.message);
         }
-
-        wsHandler(tid, (err) => {
-            if (err) {
-                logger.error("WebSocket Error:", err);
-            } else {
-                logger.info("WebSocket operation completed successfully.");
-            }
-        });
-    });
-} else {
-    console.log('파일이 있다');
+    } else {
+        console.log('파일이 있다');
+    }
 }
+
+main();
