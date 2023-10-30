@@ -1,0 +1,35 @@
+.sticky {
+    position: sticky;
+}
+.top-0 {
+    top: 0;
+}
+.left-0 {
+    left: 0;
+}
+.z-20 {
+    z-index: 20;
+}
+.flex {
+    display: flex;
+}
+
+.px-\[16px\] {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.items-center {
+    align-items: center;
+}
+.shrink-0 {
+    flex-shrink: 0;
+}
+.w-full {
+    width: 100%;
+}
+.h-\[56px\] {
+    height: 56px;
+}

@@ -1,0 +1,61 @@
+[
+    {
+      "name": "John Doe",
+      "age": 30,
+      "maritalStatus": "Single",
+      "contact": {
+        "email": "john@example.com",
+        "phone": "123-456-7890"
+      },
+      "address": {
+        "street": "123 Main St",
+        "city": "Anytown",
+        "zipcode": "12345"
+      },
+      "hobbies": {
+        "interests": ["Reading", "Gardening", "Cooking"],
+        "favorites": {
+          "book": "The Great Gatsby",
+          "plant": "Roses",
+          "dish": "Lasagna"
+        }
+      },
+      "occupation": {
+        "title": "Software Developer",
+        "company": "TechCorp",
+        "experience": "5 years"
+      },
+      "Married" : false
+    },
+    {
+      "name": "Jane Smith",
+      "age": 28,
+      "maritalStatus": "Married",
+      "contact": {
+        "email": "jane@example.com",
+        "phone": "987-654-3210"
+      },
+      "address": {
+        "street": "456 Elm St",
+        "city": "Smallville",
+        "zipcode": "54321"
+      },
+      "hobbies": {
+            "interests": ["Painting", "Traveling", "Photography"],
+            "favorites": {
+                "book": "To Kill a Mockingbird",
+                "plant": "Sunflowers",
+                "dish": "Sushi"
+                }
+      },
+      "occupation": {
+            "title": "Graphic Designer",
+            "company": "Creative Designs",
+            "experience": "7 years"
+        },
+        "Married" : true
+    
+    }
+    
+  ]
+  

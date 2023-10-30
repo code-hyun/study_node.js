@@ -1,0 +1,26 @@
+{
+    "members" : [
+        {
+            "name" : "jahyun",
+            "age" : 30,
+            "power" : 
+                {
+                    "power1" : [
+                        "Radiation resistance", 
+                        "Turning tiny",
+                        "Radiation blast"
+                    ],
+                    "power2" : [
+                        "Million tonne punch",
+                        "Damage resistance",
+                        "Superhuman reflexes"
+                    ]
+
+                }
+            
+        },
+        {
+
+        }
+    ]
+}
