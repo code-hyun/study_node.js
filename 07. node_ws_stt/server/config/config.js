@@ -1,6 +1,6 @@
 // clova config
-const clientId = 'gy3zsjsfoz';
-const clientSecret = 'VkHcHzS5baIcRhdlo11HlsoU0dEkbbU0rrTRCCxR';
+const clientId = 'cliendId';
+const clientSecret = 'clientSecret';
 const clova_url = 'https://naveropenapi.apigw.ntruss.com/recog/v1/stt?lang='
 
 // db config
