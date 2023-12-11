@@ -27,7 +27,7 @@
 
 # 03. json_practice
 <details>
-  <summary>Click Me</summary>
+  <summary>json_practice</summary>
 <img width="1146" alt="image" src="https://github.com/code-hyun/study_node.js/assets/122762287/3d43a2f5-90fd-4832-bd90-4f3695fb323c">
 <img width="1139" alt="image" src="https://github.com/code-hyun/study_node.js/assets/122762287/4a5d98c8-bf13-47a2-bfb5-a7dca6e7c780">
 <img width="1099" alt="image" src="https://github.com/code-hyun/study_node.js/assets/122762287/75e87b62-c71b-4c2e-9e6f-16d3e9b76b61">
