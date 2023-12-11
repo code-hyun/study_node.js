@@ -29,3 +29,15 @@
 
 
 # 07. node_Websocket_STT
+<img width="1224" alt="image" src="https://github.com/code-hyun/study_node.js/assets/122762287/2475e07d-fb7d-47aa-a794-5941c15d588e">
+<img width="910" alt="image" src="https://github.com/code-hyun/study_node.js/assets/122762287/8d8e8186-ef5f-45bd-8bfd-3e90d303c964">
+<img width="884" alt="image" src="https://github.com/code-hyun/study_node.js/assets/122762287/fa7339a2-0a59-47ad-b1a0-bb2acd1847bc">
+<img width="878" alt="image" src="https://github.com/code-hyun/study_node.js/assets/122762287/dc87627b-2bac-45d3-9c21-0bf8e39e0f58">
+<img width="878" alt="image" src="https://github.com/code-hyun/study_node.js/assets/122762287/7f05c6b9-b41d-41fa-b4d8-26234aae4df0">
+<img width="870" alt="image" src="https://github.com/code-hyun/study_node.js/assets/122762287/76a34da2-2111-4325-8067-d42db6852746">
+<img width="891" alt="image" src="https://github.com/code-hyun/study_node.js/assets/122762287/a4cf2816-935d-4d49-bc33-3ca3447eea77">
+<img width="891" alt="image" src="https://github.com/code-hyun/study_node.js/assets/122762287/7b5b9884-0f2b-40ba-b04a-d690782122c5">
+<img width="928" alt="image" src="https://github.com/code-hyun/study_node.js/assets/122762287/eb0e955f-6da7-44f2-be6f-ad1006494de4">
+<img width="901" alt="image" src="https://github.com/code-hyun/study_node.js/assets/122762287/5934cf40-0e9d-4221-9e91-c4c0371deec3">
+<img width="910" alt="image" src="https://github.com/code-hyun/study_node.js/assets/122762287/b117e78f-984e-44cd-afcf-99fbb30920a4">
+<img width="898" alt="image" src="https://github.com/code-hyun/study_node.js/assets/122762287/a93a3c3a-7adf-467c-8409-dcea69f06acb">
